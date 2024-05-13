@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fullcalendar.min.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="fullcalendar.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+
+    <link href="../css/User.css" rel="stylesheet">
+
+    <link href="ssfichUser/Accueil.html" rel="stylesheet">
+    <link href="ssfichUse/planning.html" rel="stylesheet">
+    <link href="ssfichUse/Messagerie.html" rel="stylesheet">
+    <link href="ssfichUse/Profil.html" rel="stylesheet">
+    <title>Profil</title>
+</head>
+<body>
+
+    <!--------------------------------------------------------NavBar------------------------------------------------------------->
+
+    <div class="navbar" id="navbar">
+        <div class="navbar-header">
+          <a class="logo" href="#">
+            <img src="../images/logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="&#xf002; Rechercher...">
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><span class="status">En ligne</span></li>
+            <li><a href="#"><i class="fas fa-bell"></i></a>
+            </li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+          </ul>
+        </div>
+      </div>
+  
+  
+  <!--------------------------------------------------------Sidebar---------------------------------------------------------->
+      <div class="sidebar" id="sidebar">
+        <div class="menu-list">
+          <ul class="ul1">
+            <li><a href="Accueil.html" id="homeLink"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="Profil.html" id="profileLink"><i class="fas fa-paw"></i> Profil</a></li>
+            <li><a href="Messagerie.html"><i class="fas fa-envelope"></i> Messages </a></li>
+            <li><a href="planning.html"><i class="fas fa-calendar-alt"></i> Mon Planning </i></a></li>
+            <li><a href="#"><i class="fas fa-bullhorn"></i> Annonces </a></li>
+          </ul> 
+          
+          <ul class="ul2">
+            <li><a href="Param.html"><i class="fas fa-cog"></i> Paramètres </a></li>
+            <li><a href="#"> <i class="fas fa-question-circle"></i> Aide et Support</a></li>
+            <hr class="separator">
+            <li><a href="" class="logout" id="log"><i class="fas fa-sign-out-alt"></i> Se déconnecter</a></li>
+          </ul>
+        </div>
+      </div>
+  <!--------------------------------------------------------------------------------------------------------------------------------------->
+      
+  <div id="content-container" class="container">
+    <div class="pet-profiles">
+        <div id="petProfileForm" >
+          <h2>Ajouter un Nouvel Animal Domestique</h2>
+          <form id="addPetForm">
+              <div class="form-group">
+                  <label for="petName">Nom de l'animal:</label>
+                  <input type="text" id="petName" name="petName" required>
+              </div>
+              <div class="form-group">
+                  <label for="petSpecies">Espèce:</label>
+                  <select id="petSpecies" name="petSpecies" required>
+                      <option value="">Sélectionner une espèce</option>
+                      <option value="chien">Chien</option>
+                      <option value="chat">Chat</option>
+                      <option value="chat">autre</option>
+      
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="petBreed">Race:</label>
+                  <input type="text" id="petBreed" name="petBreed">
+              </div>
+              <div class="form-group">
+                  <label for="petAge">Âge:</label>
+                  <input type="number" id="petAge" name="petAge" min="0" max="100">
+              </div>
+              <div class="form-group">
+                  <label>Sexe:</label><br>
+                  <input type="radio" id="male" name="petGender" value="male">
+                  <label for="male">Mâle</label>
+                  <input type="radio" id="female" name="petGender" value="female">
+                  <label for="female">Femelle</label>
+              </div>
+              <div class="form-group">
+                  <label for="petDescription">Description:</label>
+                  <textarea id="petDescription" name="petDescription"></textarea>
+              </div>
+              <div class="form-group">
+                  <label for="petPhoto">Photo:</label>
+                  <input type="file" id="petPhoto" name="petPhoto" accept="image/*">
+              </div>
+              <button type="submit" class="btn2">Ajouter</button>
+          </form>
+      </div>
+      
+        <!------------------------------- Liste des profils d'animaux domestiques existants ----------------------------------------->
+        
+        <div class="pet-table">
+          <h2>Mes Animaux Domestiques Enregistrés</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Espèce</th>
+                <th>Race</th>
+                <th>Âge</th>
+                <th>Sexe</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Les données des animaux domestiques seront ajoutées ici dynamiquement via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

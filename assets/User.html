@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fullcalendar.min.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="fullcalendar.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+
+    <link href="css/User.css" rel="stylesheet">
+
+    <link href="ssfichUser/Accueil.html" rel="stylesheet">
+    <link href="ssfichUse/planning.html" rel="stylesheet">
+    <link href="ssfichUse/Messagerie.html" rel="stylesheet">
+    <link href="ssfichUse/Profil.html" rel="stylesheet">
+
+    <title>User</title>
+</head>
+<body>
+
+<!--------------------------------------------------------NavBar------------------------------------------------------------->
+
+    <div class="navbar" id="navbar">
+      <div class="navbar-header">
+        <a class="logo" href="#">
+          <img src="./images/logo.png" alt="Logo">
+        </a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="&#xf002; Rechercher...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-list">
+        <ul>
+          <li><span class="status">En ligne</span></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+<!--------------------------------------------------------Sidebar---------------------------------------------------------->
+    <div class="sidebar" id="sidebar">
+      <div class="menu-list">
+        <ul class="ul1">
+          <li><a href="ssfichUser/Accueil.html"><i class="fas fa-home"></i> Accueil</a></li>
+          <li><a href="ssfichUser/Profil.html" ><i class="fas fa-paw"></i> Profil</a></li>
+          <li><a href="ssfichUser/Messagerie.html"><i class="fas fa-envelope"></i> Messages </a></li>
+          <li><a href="ssfichUser/planning.html"><i class="fas fa-calendar-alt"></i> Mon Planning </i></a></li>
+          <li><a href="#"><i class="fas fa-bullhorn"></i> Annonces </a></li>
+        </ul> 
+        
+        <ul class="ul2">
+          <li><a href="ssfichUser/Param.html"><i class="fas fa-cog"></i> Paramètres </a></li>
+          <li><a href="#"> <i class="fas fa-question-circle"></i> Aide et Support</a></li>
+          <hr class="separator">
+          <li><a href="" class="logout" id="log"><i class="fas fa-sign-out-alt"></i> Se déconnecter</a></li>
+        </ul>
+      </div>
+    </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+    
+<div id="content-container" class="container">
+      <!-- Le contenu de chaque section sera chargé ici -->
+  </div>
+
+
+
+    <!--------------------------------------------------Espace Publi------------------------------------------------------------------------>
+    
+      
+    <!----------------------------------Profil Propriétaire--------------------------------->
+    <div class="user-profile">
+      <h1 class="text-center">Mon Compte</h1>
+      <div class="card">
+          <div class="card-body">
+              <h2 class="card-title">Informations Personnelles</h2>
+              <p class="card-text"><strong>Nom :</strong> Melissa Laidi</p>
+              <p class="card-text"><strong>Email :</strong> Melissa.Laidi@example.com</p>
+              <!-- Ajoutez d'autres informations personnelles ici -->
+          </div>
+      </div>
+      <div class="card mt-4">
+          <div class="card-body">
+              <h2 class="card-title">Photo de Profil</h2>
+              <div class="profile-picture">
+                  <img src="profile-picture.jpg" alt="Photo de Profil" class="img-fluid">
+              </div>
+          </div>
+      </div>
+      <div class="card mt-4">
+          <div class="card-body">
+              <h2 class="card-title">Mes Animaux Domestiques</h2>
+              <ul class="pet-list">
+                  <li><strong>Nom :</strong> Buddy</li>
+                  <li><strong>Espèce :</strong> Chien</li>
+                  <li><strong>Race :</strong> Labrador Retriever</li>
+                  <!-- Ajoutez d'autres détails sur les animaux domestiques ici -->
+              </ul>
+          </div>
+      </div>
+  </div>
+ <!------------------------------------profils des animaux domestiques --------------------------------------------------------------->
+ 
+<!-------------------------------------------Espace Messagerie------------------------------------------------------>
+   
+  <!--------------------------------------------------------Espace Agenda---------------------------------------------------------------------->
+  
+    <script src=./js/links.js></script>
+    
+
+  
+  </body>
+  
+</html>

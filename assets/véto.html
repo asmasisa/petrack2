@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/véto.css" rel="stylesheet">
+
+  <title>Espace Vétérinaire</title>
+  <!-- Liens vers les fichiers CSS et JavaScript -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="navbar">
+    <div class="navbar-header">
+      <h3>Espace Vétérinaire</h3>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3>Espace Vétérinaire</h3>
+    </div>
+    <ul class="menu-list">
+      <li><a href="#profile">Profil</a></li>
+      <li><a href="#appointments">Rendez-vous</a></li>l
+      <li><a href="#patients">Patients</a></li>
+      <li><a href="#advice">Conseils</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#reports">Rapports</a></li>
+      <li><a href="#settings">Paramètres</a></li>
+    </ul>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="content">
+    <header>
+      <h1>Bienvenue dans votre espace vétérinaire</h1>
+    </header>
+
+    <main>
+      <!-- Section Profil -->
+      <section id="profile">
+        <h2>Profil du vétérinaire</h2>
+        <!-- Insérez les informations du profil du vétérinaire ici -->
+        <p>Nom: John Doe</p>
+        <p>Adresse: 123 Rue Principale, Ville, Pays</p>
+        <p>Téléphone: +1234567890</p>
+        <p>Email: john.doe@example.com</p>
+        <!-- Ajoutez un bouton pour modifier le profil -->
+        <button>Modifier le profil</button>
+      </section>
+
+      <!-- Section Rendez-vous -->
+      <section id="appointments">
+        <h2>Prise de rendez-vous</h2>
+        <!-- Insérez un calendrier et un formulaire de prise de rendez-vous ici -->
+        <!-- Calendrier -->
+        <div id="calendar">
+          <!-- Le calendrier sera affiché ici -->
+        </div>
+        <!-- Formulaire de prise de rendez-vous -->
+        <form>
+          <div class="form-group">
+            <label for="appointmentDate">Date du rendez-vous :</label>
+            <input type="date" id="appointmentDate" name="appointmentDate">
+          </div>
+          <div class="form-group">
+            <label for="appointmentTime">Heure du rendez-vous :</label>
+            <input type="time" id="appointmentTime" name="appointmentTime">
+          </div>
+          <div class="form-group">
+            <label for="appointmentReason">Raison du rendez-vous :</label>
+            <textarea id="appointmentReason" name="appointmentReason" rows="3"></textarea>
+          </div>
+          <button type="submit">Prendre rendez-vous</button>
+        </form>
+      </section>
+
+      <!-- Section Patients -->
+      <section id="patients">
+        <h2>Gestion des patients</h2>
+        <!-- Insérez une liste des patients et leurs dossiers médicaux ici -->
+        <!-- Liste des patients -->
+        <ul id="patient-list">
+          <!-- Les patients seront affichés ici -->
+        </ul>
+      </section>
+
+      <!-- Section Conseils -->
+      <section id="advice">
+        <h2>Conseils vétérinaires</h2>
+        <!-- Insérez une collection d'articles, de conseils et de ressources ici -->
+        <!-- Articles, conseils, ressources -->
+        <div id="advice-articles">
+          <!-- Les articles et conseils seront affichés ici -->
+        </div>
+      </section>
+
+      <!-- Section Notifications -->
+      <section id="notifications">
+        <h2>Notifications</h2>
+        <!-- Insérez une liste des notifications ici -->
+        <!-- Liste des notifications -->
+        <ul id="notification-list">
+          <!-- Les notifications seront affichées ici -->
+        </ul>
+      </section>
+
+      <!-- Section Rapports -->
+      <section id="reports">
+        <h2>Statistiques et rapports</h2>
+        <!-- Insérez des tableaux de bord et des graphiques ici -->
+        <!-- Tableaux de bord et graphiques -->
+        <div id="dashboard">
+          <!-- Les tableaux de bord et graphiques seront affichés ici -->
+        </div>
+      </section>
+
+      <!-- Section Paramètres -->
+      <section id="settings">
+        <h2>Paramètres</h2>
+        <!-- Insérez des options de personnalisation, confidentialité et sécurité ici -->
+        <!-- Options de personnalisation, confidentialité et sécurité -->
+        <div id="settings-options">
+          <!-- Les options seront affichées ici -->
+        </div>
+      </section>
+      <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher...">
+    </div>
+    <div class="online-status">
+      <span class="status"></span>
+    </div>
+    <div class="profile">
+      <img src="profile.jpg" alt="Profil">
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="content">
+  </div>
+
+    <footer>
+      <p>&copy; 2024 Petracker. Tous droits réservés.</p>
+    </footer>
+  </div>
+
+  <!-- Script pour la logique JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

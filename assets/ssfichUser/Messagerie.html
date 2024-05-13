@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fullcalendar.min.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="fullcalendar.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+
+    <link href="../css/User.css" rel="stylesheet">
+
+    <link href="ssfichUser/Accueil.html" rel="stylesheet">
+    <link href="ssfichUse/planning.html" rel="stylesheet">
+    <link href="ssfichUse/Messagerie.html" rel="stylesheet">
+    <link href="ssfichUse/Profil.html" rel="stylesheet">
+    <title>Messagerie</title>
+</head>
+<body>
+<!--------------------------------------------------------NavBar------------------------------------------------------------->
+
+<div class="navbar" id="navbar">
+    <div class="navbar-header">
+      <a class="logo" href="#">
+        <img src="../images/logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="&#xf002; Rechercher...">
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="nav-list">
+      <ul>
+        <li><span class="status">En ligne</span></li>
+        <li><a href="#"><i class="fas fa-bell"></i></a>
+        </li>
+        <li><a href="#"><i class="fas fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+
+<!--------------------------------------------------------Sidebar---------------------------------------------------------->
+  <div class="sidebar" id="sidebar">
+    <div class="menu-list">
+      <ul class="ul1">
+        <li><a href="Accueil.html"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="Profil.html" ><i class="fas fa-paw"></i> Profil</a></li>
+        <li><a href="Messagerie.html"><i class="fas fa-envelope"></i> Messages </a></li>
+        <li><a href="planning.html"><i class="fas fa-calendar-alt"></i> Mon Planning </i></a></li>
+        <li><a href="#"><i class="fas fa-bullhorn"></i> Annonces </a></li>
+      </ul> 
+      
+      <ul class="ul2">
+        <li><a href="Param.html"><i class="fas fa-cog"></i> Paramètres </a></li>
+        <li><a href="#"> <i class="fas fa-question-circle"></i> Aide et Support</a></li>
+        <hr class="separator">
+        <li><a href="" class="logout" id="log"><i class="fas fa-sign-out-alt"></i> Se déconnecter</a></li>
+      </ul>
+    </div>
+  </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+  
+<div id="content-container" class="container">
+    
+
+    <div class="messages-container">
+        <div class="left-panel">
+            <input type="text" placeholder="Rechercher un utilisateur ou messages">
+            <div class="message-filters">
+                <button id="b1">Tous</button>
+                <button id="b2">Lu</button>
+                <button id="b3">Non Lu</button>
+            </div>
+            <div class="message-list">
+                <!-- Liste des messages reçus -->
+                <div class="message-item">
+                    <div class="sender">Expéditeur</div>
+                    <div class="timestamp">Heure d'envoi</div>
+                    <div class="message-preview">Aperçu du message...</div>
+                    
+                </div>
+                <!-- Autres messages... -->
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="chat-header">Nom de l'utilisateur</div>
+            <div class="chat-messages">
+                <!-- Affichage de la conversation -->
+                <div class="sent-message">Message envoyé</div>
+                <div class="received-message">Message reçu</div>
+                <!-- Autres messages... -->
+            </div>
+            <div class="message-input">
+                <input type="text" placeholder="Taper un message...">
+                <button>Envoyer</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
